@@ -7,11 +7,25 @@ body, html{
 
 }
 
-.resetButton{
-    width: 30%;
-    justify-self: center;
+.gridoptions{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
     margin-bottom: 2%;
 }
+.slidecontainer{
+    display: flex;
+    width: 150px;
+}
+.sliderdisplay{
+    align-self: center;
+
+}
+.resetButton{
+    width: 30%;
+}
+
 
 .gridcontainer{
     display:grid;

@@ -7,7 +7,19 @@
     <title>Etch-a-Sketch</title>
 </head>
 <body>
-    <button class="resetButton">New Grid</button>
+    <div class="gridoptions">
+
+        <button class="resetButton">New Grid</button>
+
+        <div class="slideroptions">
+            <div class="slidecontainer">
+                <input type="range" min="1" max="100" value="50" class="slider">
+                <h2 class = "sliderdisplay"></h2>
+            </div>
+        </div>
+
+        
+    </div>
     <div class="gridcontainer"></div>
 
     <script src="script.js"></script>

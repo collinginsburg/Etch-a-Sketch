@@ -96,6 +96,16 @@ squares.forEach(item => {item.addEventListener('touchmove', sketch)
 const BUTTON = document.querySelector('.resetButton');
 BUTTON.addEventListener('click', newGrid); 
 
+// slider
+
+let slider = document.querySelector('.slider');
+let output = document.querySelector('.sliderdisplay');
+output.textContent = slider.value;
+
+slider.oninput = function() {
+    output.textContent = this.value;
+  }
+
 
 
 // on page load
