@@ -86,7 +86,7 @@ function sketchTheGrid(){
 squares.forEach(item => {item.addEventListener('mouseover', sketch)  
 });
 
-squares.forEach(item => {item.addEventListener('mousedown', sketch)  
+squares.forEach(item => {item.addEventListener('touchmove', sketch)  
 });
 
 }
