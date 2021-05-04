@@ -101,10 +101,14 @@ BUTTON.addEventListener('click', newGrid);
 
 let slider = document.querySelector('.slider');
 let output = document.querySelector('.sliderdisplay');
-output.textContent = slider.value;
+output.textContent = `${slider.value * slider.value} squares`;
 
 slider.oninput = function() {
-    output.textContent = this.value;
+    if (this.value < 2){
+        output.textContent = `${this.value * this.value} block`
+    } else {
+        output.textContent = `${this.value * this.value} blocks`;
+    }
   }
 
 
