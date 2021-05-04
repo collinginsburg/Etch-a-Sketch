@@ -7,7 +7,8 @@ function removeOldSquares(){
 let userInput;
 
 function howManySquares(){
-    userInput = parseInt(prompt('How many squares do you want on each side of your grid? (Max 100)'));
+    // userInput = parseInt(prompt('How many squares do you want on each side of your grid? (Max 100)'));
+    userInput = slider.value;
     return userInput
 }
 
