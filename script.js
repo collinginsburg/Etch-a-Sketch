@@ -30,7 +30,6 @@ const gridcontainer = document.querySelector('.gridcontainer');
 function setGridRow(){
     gridcontainer.style.gridTemplateRows = `repeat(${userInput}, auto)`;
 }
-
 function setGridColumn(){
     gridcontainer.style.gridTemplateColumns = `repeat(${userInput}, auto)`;
 }
@@ -60,12 +59,7 @@ function initialGrid(){
     sketchTheGrid();
 }
 
-initialGrid();
-
-
-
 // create squares
-
 function createGrid(){
 
     let i = 1;
@@ -82,10 +76,7 @@ function createGrid(){
     }
 }
 
-
 // sketch the squares
-
-
 function sketch(){
     this.classList.add('sketched');
     this.classList.remove('unsketched');
@@ -100,4 +91,12 @@ squares.forEach(item => {item.addEventListener('mousedown', sketch)
 
 }
 
+// reset button
 
+const BUTTON = document.querySelector('.resetButton');
+BUTTON.addEventListener('click', newGrid); 
+
+
+
+// on page load
+initialGrid();

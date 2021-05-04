@@ -7,21 +7,16 @@ body, html{
 
 }
 
-.button{
-    width: 20%;
+.resetButton{
+    width: 30%;
     justify-self: center;
     margin-bottom: 2%;
 }
 
 .gridcontainer{
     display:grid;
-    /* grid-template-rows: repeat(10, auto); */
-    /* grid-template-columns: repeat(10, auto); */
     width: 90vw;
-    height: 90vw;
-
-
-    
+    height: 90vw;   
 }
 
 
