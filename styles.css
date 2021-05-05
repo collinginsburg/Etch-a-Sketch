@@ -4,35 +4,59 @@ body, html{
     width: 100%;
     justify-content: center;
     align-content: center;
+    font-family: 'Courier New', Courier, monospace;
 
 }
 
 .gridoptions{
     display: flex;
     justify-content: space-around;
-    align-items: center;
-    width: 100%;
     margin-bottom: 2%;
 }
-.slidecontainer{
+
+.slideroptions{
     display: flex;
-    width: 150px;
+    align-self: center;
+}
+.slidecontainer{
+    align-content: center;
 }
 .sliderdisplay{
-    align-self: center;
-
+    text-align: left;
+    width: 202px;
+    margin-top: 2%;
+    font-size: 14px;
 }
+
 .resetButton{
-    width: 30%;
+    width: 25%;
+    height: auto;
+    border: 2px dotted black;
+    background-color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+}
+.resetButton:hover{
+    background-color: black;
+    color: white;
+    border: 2px dotted white;
 }
 
 
 .gridcontainer{
+    justify-self: center;
     display:grid;
     width: 90vw;
-    height: 90vw;   
+    height: 90vw;  
 }
 
+.instructions{
+    width: auto;
+    margin: 0 auto;
+    
+    margin-top: 10px;
+    line-height: 20px;
+}
 
 @media (min-width: 740px){
     .gridcontainer{
@@ -41,6 +65,32 @@ body, html{
 
     }
 }
+
+@media (max-width: 739px){
+    .instructions{
+        font-size: 14px;
+        margin-left: 20px;
+
+    }
+    .gridcontainer{
+        width: 40vh;
+        height: 40vh;
+
+    }
+    .gridoptions{
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 2%;
+    }
+    .sliderdisplay{
+        text-align: left;
+        width: 180px;
+        margin-top: 2%;
+        font-size: 14px;
+    }
+}
+
+
 .unsketched{
     background-color: red;
 }
