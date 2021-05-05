@@ -32,7 +32,7 @@ body, html{
     width: 25%;
     height: auto;
     border: 2px dotted black;
-    background-color: white;
+    background-color:rgba(206, 205, 205, 0.644);
     font-family: 'Courier New', Courier, monospace;
     font-size: 16px;
 }
