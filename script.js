@@ -59,28 +59,38 @@ function createGrid(){
 
 // 8. add event listeners to the squares
 function addEventListeners(){
-    squares.forEach(item => {item.addEventListener('touchstart', addOpacity);  
-    });
-    squares.forEach(item => {item.addEventListener('mouseover', addOpacity);  
-    });
+        
+        squares.forEach(item => {item.addEventListener('touchstart', addOpacity);  
+        });
+        squares.forEach(item => {item.addEventListener('mouseover', addOpacity);  
+        });
+    
 }
 
 // 9. add opacity to squares
 let currentOpacity;
+let opacityOn = document.querySelector('.opacityCheckbox').checked;
 
 function addOpacity(e){
-    currentOpacity = Number(e.target.style.opacity);
-    slightlyDarker = currentOpacity + .1;
+    opacityOn = document.querySelector('.opacityCheckbox').checked;
+    if (opacityOn === true){
 
-    if (currentOpacity < 1){
-        e.target.style.opacity = slightlyDarker;
-        console.log(slightlyDarker);
+        currentOpacity = Number(e.target.style.opacity);
+        slightlyDarker = currentOpacity + .1;
+
+        if (currentOpacity < 1){
+            e.target.style.opacity = slightlyDarker;
+            // console.log(slightlyDarker);
+        }
+
+    }else{
+        e.target.style.opacity = 1;
     }
 }
 
-// 10. allow user to toggle between gradient and non-gradient
+// 10. add non-opaque/solid color to squares
 
-// let 
+
 
 
 

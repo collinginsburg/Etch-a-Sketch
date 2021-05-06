@@ -11,9 +11,16 @@ body, html{
 .gridoptions{
     display: flex;
     justify-content: space-around;
+    align-items: center;
     margin-bottom: 2%;
 }
-
+.opacityCheckboxContainer{
+    display: inline-flex;
+    /* float: left; */
+    /* position: sticky; */
+    align-items: center;
+    font-size: 14px;
+}
 .slideroptions{
     display: flex;
     align-self: center;

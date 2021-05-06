@@ -8,22 +8,30 @@
 </head>
 <body>
     <div class="gridoptions">
-
-        <button class="resetButton">New Grid</button>
+        
+            <button class="resetButton">New Sketch</button>
+            <!-- <a href="#/" class="options">options</a> -->
+            <div class="opacityCheckboxContainer">
+                <input type="checkbox" class="opacityCheckbox" checked>
+                <p>Opacity</p>
+            </div>
+        
 
         <div class="slideroptions">
+            
             <div class="slidecontainer">
                 <input type="range" min="1" max="100" value="50" class="slider">
                 <h2 class = "sliderdisplay"></h2>
             </div>
+            
         </div>
 
         
     </div>
     <div class="gridcontainer"></div>
 
-    <div class="instructions"><p>To change block density, adjust slider then hit 'New Grid'. <br>
-        To reset board, also hit 'New Grid'.</p></div>
+    <div class="instructions"><p>To change block density, adjust slider then hit 'New Sketch'. <br>
+        To reset board, also hit 'New Sketch'.</p></div>
     <script src="script.js"></script>
 </body>
 </html>
