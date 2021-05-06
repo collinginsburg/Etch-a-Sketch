@@ -48,6 +48,8 @@ body, html{
     display:grid;
     width: 90vw;
     height: 90vw;  
+    border: 80px groove red;
+    border-radius: 10px;
 }
 
 .instructions{
@@ -58,10 +60,16 @@ body, html{
     line-height: 20px;
 }
 
+
+
+
+/* MEDIA QUERIES */
+
+
 @media (min-width: 740px){
     .gridcontainer{
-        width: 70vh;
-        height: 70vh;
+        width: 50vh;
+        height: 50vh;
 
     }
 }
@@ -73,8 +81,9 @@ body, html{
 
     }
     .gridcontainer{
-        width: 40vh;
-        height: 40vh;
+        width: 55vw;
+        height: 55vw;
+        border: 12vw groove red;
 
     }
     .gridoptions{
@@ -91,11 +100,3 @@ body, html{
 }
 
 
-.unsketched{
-    background-color: orange;
-}
-.sketched{
-    background-color:blue;
-    opacity: 0;
-    
-}

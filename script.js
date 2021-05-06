@@ -4,8 +4,7 @@
 let squares = document.querySelectorAll('.square');
 
 function unsketch(){
-    squares.forEach(item => item.classList.remove('sketched'));
-    squares.forEach(item => item.classList.add('unsketched'));
+    squares.forEach(item => item.style.opacity = 0);
 }
 
 // 2. remove old squares
@@ -48,39 +47,29 @@ function createGrid(){
 
     while (i <= grid){
         let square = document.createElement('div');
-        square.style.cssText = "width:100%; height:100%";
-        square.classList.add(`square`, `${i}`, `unsketched`);
+        square.style.cssText = "width:100%; height:100%; background-color: black; opacity: 0";
+        square.classList.add(`square`, `${i}`);
         gridcontainer.appendChild(square);
         i++;
     }
+
+    squares = document.querySelectorAll('.square');
+    return squares
 }
 
-// 8. sketch the squares
-
-let sketched;
-
-function sketch(e){
-    e.target.classList.add('sketched');
-    e.target.classList.remove('unsketched');
-    sketched = document.querySelectorAll('.sketched');
-    sketched.forEach(item => {item.addEventListener('mouseover', addOpacity);  
+// 8. add event listeners to the squares
+function addEventListeners(){
+    squares.forEach(item => {item.addEventListener('touchstart', addOpacity);  
     });
-    sketched.forEach(item => {item.addEventListener('touchstart', addOpacity);  
-});
-         
-}
-
-function sketchTheGrid(){
-    squares.forEach(item => {item.addEventListener('mouseover', sketch)  
+    squares.forEach(item => {item.addEventListener('mouseover', addOpacity);  
     });
 }
 
 // 9. add opacity to squares
 let currentOpacity;
+
 function addOpacity(e){
-    // console.log(e.target.style.opacity);
     currentOpacity = Number(e.target.style.opacity);
-    // console.log(currentOpacity);
     slightlyDarker = currentOpacity + .1;
 
     if (currentOpacity < 1){
@@ -137,8 +126,7 @@ function newGrid(){
     setGridRow();
     setGridColumn();
     createGrid();
-    squares = document.querySelectorAll('.square');
-    sketchTheGrid();
+    addEventListeners();
 }
 
 // set initial grid function
@@ -150,8 +138,7 @@ function initialGrid(){
     setGridRow();
     setGridColumn();
     createGrid();
-    squares = document.querySelectorAll('.square');
-    sketchTheGrid();
+    addEventListeners();
 }
 
 
