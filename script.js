@@ -4,7 +4,7 @@
 let squares = document.querySelectorAll('.square');
 
 function unsketch(){
-    squares.forEach(item => item.style.opacity = 0);
+    squares.forEach(item => item.style.opacity = 0.1);
 }
 
 // 2. remove old squares
@@ -47,7 +47,7 @@ function createGrid(){
 
     while (i <= grid){
         let square = document.createElement('div');
-        square.style.cssText = "width:100%; height:100%; background-color: black; opacity: 0.2";
+        square.style.cssText = "width:100%; height:100%; background-color: black; opacity: 0.1";
         square.classList.add(`square`, `${i}`);
         gridcontainer.appendChild(square);
         i++;
