@@ -47,7 +47,7 @@ function createGrid(){
 
     while (i <= grid){
         let square = document.createElement('div');
-        square.style.cssText = "width:100%; height:100%; background-color: black; opacity: 0";
+        square.style.cssText = "width:100%; height:100%; background-color: black; opacity: 0.2";
         square.classList.add(`square`, `${i}`);
         gridcontainer.appendChild(square);
         i++;

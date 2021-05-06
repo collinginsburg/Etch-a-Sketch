@@ -49,13 +49,16 @@ body, html{
     width: 90vw;
     height: 90vw;  
     border: 80px groove red;
-    border-radius: 10px;
+    border-radius: 10px; 
+    /* border-image: url(etchasketch.svg) 180 round; */
+    -webkit-user-select: none; /* Chrome/Safari */ 
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+ */
 }
 
 .instructions{
     width: auto;
     margin: 0 auto;
-    
     margin-top: 10px;
     line-height: 20px;
 }
