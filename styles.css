@@ -92,10 +92,10 @@ body, html{
 
 
 .unsketched{
-    background-color:red;
+    background-color: orange;
 }
 .sketched{
-    background-color: black;
+    background-color:blue;
     opacity: 0;
     
 }
