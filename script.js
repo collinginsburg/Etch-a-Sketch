@@ -118,8 +118,9 @@ slider.oninput = function() {
 
 // reset button
 
-const BUTTON = document.querySelector('.resetButton');
-BUTTON.addEventListener('click', newGrid); 
+const RESETBUTTON = document.querySelector('.reset');
+// const BUTTON1 = document.querySelector('.reset button');
+RESETBUTTON.addEventListener('click', newGrid); 
 
 
 
