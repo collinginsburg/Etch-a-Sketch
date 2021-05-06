@@ -10,8 +10,29 @@
     <div class="gridoptions">
         
             <button class="resetButton">New Sketch</button>
-            <!-- <a href="#/" class="options">options</a> -->
-            <div class="opacityCheckboxContainer">
+
+            <div class="dropdown">
+                <a class="dropbtn">Options</a>
+                <div class="dropdown-content">
+
+                    <div class="slideroptions">
+                        <div class="slidecontainer">
+                            <h2>Density:</h2>
+                            <h2 class = "sliderdisplay"></h2>
+                            <input type="range" min="1" max="100" value="50" class="slider">
+                        </div>
+                    </div>
+
+                    <div class="opacityCheckboxContainer">
+                        <p>Opacity</p>
+                        <input type="checkbox" class="opacityCheckbox" checked>
+                    </div>
+
+                </div>
+              </div>
+
+
+            <!-- <div class="opacityCheckboxContainer">
                 <input type="checkbox" class="opacityCheckbox" checked>
                 <p>Opacity</p>
             </div>
@@ -24,14 +45,13 @@
                 <h2 class = "sliderdisplay"></h2>
             </div>
             
-        </div>
+        </div> -->
 
         
     </div>
     <div class="gridcontainer"></div>
 
-    <div class="instructions"><p>To change block density, adjust slider then hit 'New Sketch'. <br>
-        To reset board, also hit 'New Sketch'.</p></div>
+    <div class="instructions"><p>To change block density, go to Options, adjust slider from the dropdown menu, then hit 'New Sketch'. To clear board, just hit 'New Sketch'.</p></div>
     <script src="script.js"></script>
 </body>
 </html>

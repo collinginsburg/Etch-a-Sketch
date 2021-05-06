@@ -106,13 +106,13 @@ function addOpacity(e){
 
 let slider = document.querySelector('.slider');
 let output = document.querySelector('.sliderdisplay');
-output.textContent = `Density: ${slider.value * slider.value} squares`;
+output.textContent = `${slider.value * slider.value} blocks`;
 
 slider.oninput = function() {
     if (this.value < 2){
-        output.textContent = `Density: ${this.value * this.value} block`
+        output.textContent = `${this.value * this.value} block`
     } else {
-        output.textContent = `Density: ${this.value * this.value} blocks`;
+        output.textContent = `${this.value * this.value} blocks`;
     }
 }
 
