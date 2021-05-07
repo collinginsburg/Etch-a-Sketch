@@ -207,7 +207,7 @@ body, html{
     }
 }
 /* horizontal on iphone */
-@media (max-height: 673px){
+@media (max-height: 400px){
     .gridoptions{
         display: none;
 
