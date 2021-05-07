@@ -206,3 +206,14 @@ body, html{
         overflow-y: scroll;
     }
 }
+
+@media (max-height: 673px){
+    .gridcontainer{
+        height: 40vh;
+        width: 40vh;
+        border-width: 20px;
+    }
+    .gridoptions{
+        margin-top: 120px;
+    }
+}
