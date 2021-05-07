@@ -73,13 +73,31 @@ body, html{
 
 .instructions{
     width: 600px;
-    height: 80px;
+    height: 90px;
     margin: 0 auto;
     margin-top: 10px;
     line-height: 25px;
     overflow-y: scroll;
-    -webkit-overflow-scrolling: touch;
 }
+
+::-webkit-scrollbar {
+
+    -webkit-appearance: none;
+    width: .2em;
+    
+
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 0px;
+    border-style: dotted;
+    border-color: rgb(68, 67, 67,.4);
+
+    background-color:  rgb(68, 67, 67,.4);
+
+    box-shadow: 0 0 1px rgba(255,255,255,.5);
+
+} 
 
 
 /********************************* drop down***************************** */
@@ -147,6 +165,9 @@ body, html{
     .instructions{
         font-size: 16px;
         margin-top: 25px;
+        width: 70vh;
+        text-justify: inter-word;
+        margin-left: 10px;
         
     }
 }
@@ -155,7 +176,9 @@ body, html{
     .instructions{
         font-size: 16px;
         margin-top: 20px;
-        width: 90vw;
+        text-justify: inter-word;
+        margin-left: 12px;
+        width: 85vw;
 
     }
     .gridcontainer{
