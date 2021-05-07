@@ -65,15 +65,21 @@ function addEventListeners(){
         });
         squares.forEach(item => {item.addEventListener('mouseover', addOpacity);  
         });
+
+        squares.forEach(item => {item.addEventListener('touchstart', addRandomColor);  
+        });
+        squares.forEach(item => {item.addEventListener('mouseover', addRandomColor);  
+        });
     
 }
 
 // 9. add opacity to squares
+
 let currentOpacity;
-let opacityOn = document.querySelector('.opacityCheckbox').checked;
+let opacityOn;
 
 function addOpacity(e){
-    opacityOn = document.querySelector('.opacityCheckbox').checked;
+    opacityOn = document.querySelector('.opacity.Checkbox').checked;
     if (opacityOn === true){
 
         currentOpacity = Number(e.target.style.opacity);
@@ -89,7 +95,26 @@ function addOpacity(e){
     }
 }
 
-// 10. add non-opaque/solid color to squares
+// 10. add random color to squares
+
+let randomColorOn;
+let newColor;
+
+function randomColor(){
+    newColor = Math.floor(Math.random()*16777215).toString(16);
+    return newColor
+}
+
+function addRandomColor(e){
+    randomColorOn = document.querySelector('.randomColor.checkbox').checked;
+    if(randomColorOn === true){
+        randomColor();
+        e.target.style.backgroundColor = `${newColor}`;
+
+    }else{
+        e.target.style.backgroundColor = `black`;
+    }
+}
 
 
 
