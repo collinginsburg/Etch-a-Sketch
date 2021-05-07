@@ -29,7 +29,7 @@
                     </div>
 
                     <div class="downloadButton">
-                        <button class="button">Download Sketch</button>
+                        <button id="downloadbutton" class="button download">Download Sketch</button>
 
                     </div>
 
@@ -54,9 +54,24 @@
 
         
     </div>
-    <div class="gridcontainer"></div>
+    <div id="gridcontainer" class="gridcontainer"></div>
 
     <div class="instructions"><p>To change block density, go to Options, adjust slider from the dropdown menu, then hit 'New Sketch'. To clear board, just hit 'New Sketch'.</p></div>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.min.js"></script>
+    <script src="http://cdn.jsdelivr.net/g/filesaver.js"></script>
     <script src="script.js"></script>
+    <script>
+    
+    $(document).ready(function(){
+        $('#downloadbutton').click(function(){
+            domtoimage.toBlob(document.getElementById('gridcontainer'))
+            .then(function(blob){
+                window.saveAs(blob,"sketch.jpg")
+            })
+        })
+    })
+
+    </script>
 </body>
 </html>

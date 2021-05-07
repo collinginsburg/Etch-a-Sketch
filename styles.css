@@ -54,9 +54,14 @@ body, html{
     border: 2px dotted white;
 }
 
+.button.download{
+    width:100%;
+}
+
 .gridcontainer{
     justify-self: center;
     display:grid;
+    background-color: white;
     width: 90vw;
     height: 90vw;  
     border: 80px groove red;

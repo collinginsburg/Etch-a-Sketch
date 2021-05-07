@@ -1,5 +1,6 @@
 // *****************************etch a sketch*********************************
 
+
 // 1. grid reset
 let squares = document.querySelectorAll('.square');
 
@@ -121,6 +122,7 @@ slider.oninput = function() {
 const RESETBUTTON = document.querySelector('.reset');
 // const BUTTON1 = document.querySelector('.reset button');
 RESETBUTTON.addEventListener('click', newGrid); 
+
 
 
 
