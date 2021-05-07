@@ -73,9 +73,11 @@ body, html{
 
 .instructions{
     width: 600px;
+    height: 80px;
     margin: 0 auto;
     margin-top: 10px;
-    line-height: 20px;
+    line-height: 25px;
+    overflow-y: scroll;
 }
 
 
@@ -174,4 +176,9 @@ body, html{
     }
 }
 
-
+@media (max-width:470px){
+    .instructions{
+        height: 20vh;
+        overflow-y: scroll;
+    }
+}
