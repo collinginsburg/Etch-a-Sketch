@@ -206,14 +206,17 @@ body, html{
         overflow-y: scroll;
     }
 }
-
+/* horizontal on iphone */
 @media (max-height: 673px){
-    .gridcontainer{
-        height: 40vh;
-        width: 40vh;
-        border-width: 20px;
-    }
     .gridoptions{
-        margin-top: 120px;
+        display: none;
+
+    }
+    .gridcontainer{
+        border-width: 10vh;
+        
+    }
+    .instructions{
+        display: none;
     }
 }
